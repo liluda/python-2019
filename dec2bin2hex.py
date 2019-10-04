@@ -17,10 +17,22 @@ def bincon(num,addSpace):
 	#print(binString)
 	return binString
 	
+
+# dechex.py CMC kenny
+def hexcon(num):
+	key = "0123456789abcdef" 
+	h = ""
+	h16 = int(num/16)
+	h1 = num % 16
+	h = key[h16]+ key[h1]
+	return h
+	
+
 def main():
 	bs = ""
 	for i in range(0,256):
 		bs = bincon(i,1)
-		print(i,bs)
-
+		hs = ""
+		hs = hexcon(i)
+		print(i,bs,hs)
 main()

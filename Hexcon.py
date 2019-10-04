@@ -1,17 +1,17 @@
+# dechex.py CMC kenny
 def hexcon(num):
-	h16s= ""; h1s = ""; temp = "" 
+	key = "0123456789abcdef" 
+	h = ""
 	h16 = int(num/16)
-	temp = str(chr(87 +h16))
-	print("chr ",temp)
 	h1 = num % 16
-	temp = (str(chr(87+h1))
-	print("chr ",temp)
-	h16s = str(h16); h1s = str(h1)
-	h = str(h16)+str(h1)
+	h = key[h16]+ key[h1]
 	return h
-
+	
 def main():
-	hs = "";hs2 = ""
-	hs= hexcon(147);hs2 = hexcon(157)
-	print(147,hs,157,hs2)
+	hs = ""
+	for i in range(0,256):
+		hs = hexcon(i)
+		print(i,hs)
+	
 main()
+
