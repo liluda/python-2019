@@ -1,4 +1,4 @@
-#CWC
+
 def roots(a,b,c):
 	D = (b*b - 4*a*c)
 	print()
