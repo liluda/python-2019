@@ -1,15 +1,12 @@
-import random
-random.seed()
-
-a = (random.randint(1, 10))
-b = (random.randint(1, 10))
-
-print ("What is: " + str(a) + " X " + str(b) + "?") 
-ans = int(input("Your answer: ")) 
-if (a * b == ans): 
-    print ("Correct!") 
-else: 
-    print ("Incorrect!")
-    
-
-
+a=int(input("Enter side A: "))
+b=int(input("Enter side B: "))
+c=int(input("Enter side C: "))
+d=int(input("Enter side D: "))
+e=int(input("Enter side E: "))
+f=int(a-c)
+g=int(d-b-e)
+a1= int(a*b)
+a2=int((f*e)/2)
+a3=int(f*g)
+ta=int(a1+a2+a3)
+print(int("Room Area: " + ta))
