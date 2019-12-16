@@ -1,12 +1,12 @@
-a=int(input("Enter side A: "))
-b=int(input("Enter side B: "))
-c=int(input("Enter side C: "))
-d=int(input("Enter side D: "))
-e=int(input("Enter side E: "))
-f=int(a-c)
-g=int(d-b-e)
-a1= int(a*b)
-a2=int((f*e)/2)
-a3=int(f*g)
-ta=int(a1+a2+a3)
-print(int("Room Area: " + ta))
+x= (input("Enter the red: "))
+y= (input("Enter the green: "))
+z= (input("Enter the blue: "))
+
+
+if (0>= x <=255):
+	print("Red number is not correct.")
+if (0>= y <=255):
+	print("Green number is not correct.")
+if (0>= z <=255):
+	print("Blue number is not correct.")
+

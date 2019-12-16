@@ -1,9 +1,16 @@
 import turtle
+def main():
+	obj= turtle.Turtle()
+	scr= turtle.Screen()
+	scr.setup(1920, 1080)
+	obj.speed(0)
+	cloud(obj)
+	sun(obj)
+	scr.exitonclick()
 
 
 
-
-def cloud(obj,scr):
+def cloud(obj):
 	obj.color("black")
 	count = 0
 	obj.penup()
@@ -35,32 +42,22 @@ def cloud(obj,scr):
 		obj.goto(100, 300)
 		obj.pendown()
 		obj.end_fill()
-	obj.penup()
-	obj.goto(-800, 400)
-	obj.pendown()
-	obj.forward(1)
-	obj.fillcolor("orange")
-	obj.begin_fill()
-	obj.circle(500)
-	obj.end_fill()
 	
-def main():
-	obj= turtle.Turtle()
-	scr= turtle.Screen()
-	scr.setup(1920, 1080)
-	obj.speed(0)
-	sun(obj)
+
 	
 		
-def sun(obj,scr):
-	obj.penup()
-	obj.goto(-7, 3)
-	obj.pendown()
-	obj.forward(1)
-	obj.fillcolor("orange")
-	obj.begin_fill()
-	obj.circle(500)
-	obj.end_fill()
+def sun(obj):
+	s = input("Is it a sunny day: ")
+	s=s.lower()
+	if (s.find('y') !=-1):
+		obj.penup()
+		obj.goto(-800, 400)
+		obj.pendown()
+		obj.forward(1)
+		obj.fillcolor("orange")
+		obj.begin_fill()
+		obj.circle(500)
+		obj.end_fill()
 
 
 
