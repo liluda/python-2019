@@ -26,7 +26,7 @@ while (gamestatus == 0):
 			x = str(input("Roll or keep "))
 			if (d6 >= 2):
 				if (x == "roll" or x == "r"):
-					d6 = 100
+					d6 = random.randint(1,6)
 					print(d6)
 					pt += d6
 					print("your running score is now " + str(pt))
